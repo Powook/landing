@@ -1,0 +1,38 @@
+
+.footer_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656566 ;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 175px;
+  width: auto;
+  row-gap: 10px;
+  column-gap: 52px;
+}
+
+.footer {
+  display:flex;
+  margin-top:70px;
+  padding-bottom:20px;
+  padding-top: 55px;
+  justify-content:space-between
+}
+
+.footer_links a {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.contacts {
+  text-align: end;
+}

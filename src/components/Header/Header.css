@@ -1,0 +1,41 @@
+.logo_text {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  color: #E4E5EA;
+}
+
+.icons {
+  display: flex;
+   justify-content: space-between;
+   gap: 30px
+}
+
+.header {
+  padding-top:11px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 47px;
+}
+
+.headerText {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(199, 156, 0);
+  transition: all .5s ease;
+}
+
+.contacts {
+  display: flex
+}
