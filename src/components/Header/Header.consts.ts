@@ -2,7 +2,7 @@ import telegram from "../../assets/telegram.png";
 import viber from "../../assets/viber.png";
 import whatsapp from "../../assets/whatsapp.png";
 
-export const paths = [
+export const PATHS = [
   { title: "Услуги", path: "#" },
   { title: "Виджеты", path: "#" },
   { title: "Интеграции", path: "#" },
@@ -10,7 +10,7 @@ export const paths = [
   { title: "Сертификаты", path: "#" },
 ];
 
-export const nav_icons = [
+export const NAV_ICONS = [
   { icon: telegram, path: "#", alt: 'tg' },
   { icon: viber, path: "#", alt: 'vb' },
   { icon: whatsapp, path: "#", alt: 'wa' },

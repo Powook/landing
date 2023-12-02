@@ -36,3 +36,15 @@
 .contacts {
   text-align: end;
 }
+
+.contacts_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.icons {
+  display: flex;
+  gap:10px
+}

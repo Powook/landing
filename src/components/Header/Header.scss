@@ -1,9 +1,22 @@
-.logo_text {
-  font-size: 10px;
-  font-weight: 300;
-  line-height: 12px;
-  color: #E4E5EA;
+.logo {
+  width: 140px;
+  img {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 10px;  
+    font-weight: 300;
+    line-height: 12px;
+    color: #E4E5EA;
+  }
 }
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
 
 .icons {
   display: flex;
@@ -29,13 +42,17 @@
 a {
   cursor: pointer;
   text-decoration: none;
-}
 
-a:hover {
-  color: rgb(199, 156, 0);
-  transition: all .5s ease;
+  &:hover {
+    color: rgb(199, 156, 0);
+    transition: all .5s ease;
+  }
 }
 
 .contacts {
-  display: flex
+  display: flex;
+
+  &>a {
+    margin-right: 47px;
+  }
 }
