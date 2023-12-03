@@ -1,4 +1,4 @@
-import "./Button.css";
+import "./Button.scss";
 import cl from "classnames";
 
 type ButtonProps = {

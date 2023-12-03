@@ -1,8 +1,11 @@
+import { isMobile } from "../../shared/helpers/viewport";
+import { useViewportWidth } from "../../shared/hooks/viewport";
 import { Button } from "../Button/Button";
 import { FEATURES } from "./Main.consts";
 import "./Main.scss";
 
 export function Main() {
+  const isMobileDevice = useViewportWidth(isMobile, false);
   return (
     <div className="contentContainer">
       <div className="leftBlock" style={{ maxWidth: 362 }}>
@@ -22,12 +25,16 @@ export function Main() {
           мы дарим:
         </p>
         <div className="features_block">
-          {FEATURES.map((feature) => (
-            <div className="features">
-              <p>{feature.title}</p>
-              <span>{feature.subtitle}</span>
-            </div>
-          ))}
+          {FEATURES.map((feature) => {
+            return isMobileDevice ? (
+              <div className="feature_mobile"><span className="gradient">— </span>{feature.title}</div>
+            ) : (
+              <div className="features">
+                <p>{feature.title}</p>
+                <span>{feature.subtitle}</span>
+              </div>
+            );
+          })}
         </div>
         <Button
           text="Получить консультацию"

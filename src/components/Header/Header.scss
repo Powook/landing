@@ -1,3 +1,5 @@
+@import '../../shared/media';
+
 .logo {
   width: 140px;
   img {
@@ -9,12 +11,20 @@
     line-height: 12px;
     color: #E4E5EA;
   }
+
+  @media all and (max-width: 750px) {
+    display: none;
+  }
 }
 
 .ul {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
+  @include forMobile {
+    gap: 16px
+  }
 }
 
 
@@ -30,6 +40,13 @@
   justify-content: space-between; 
   align-items: center; 
   margin-top: 47px;
+
+  @media all and (max-width: 750px) {
+    padding: 16px 32px;
+    background-color: rgba(0, 0, 0, 0.205);
+    justify-content: center;
+    margin: 0 -24px;
+  }
 }
 
 .headerText {
@@ -46,6 +63,10 @@ a {
   &:hover {
     color: rgb(199, 156, 0);
     transition: all .5s ease;
+  }
+
+  @include forMobile {
+    font-size: 12px;
   }
 }
 
