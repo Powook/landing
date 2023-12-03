@@ -1,10 +1,9 @@
 @import '../../shared/media';
 
-.contentContainer {
+.block {
   display:flex; 
-  flex-grow:1; 
   justify-content:space-between; 
-  margin-top:70px;
+  flex:1;
 
   @media all and (max-width: 750px) {
     flex-direction: column;
@@ -12,6 +11,13 @@
     justify-content: unset;
     gap:45px
   }
+}
+
+.contentContainer {
+  display:flex; 
+  flex-grow:1; 
+  margin-top:70px;
+  align-items: center;
 }
 
 .leftBlock {
@@ -130,10 +136,13 @@
   }
 
   span {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;
+    color: #E4E5EA;
+    text-align: end;
     font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 

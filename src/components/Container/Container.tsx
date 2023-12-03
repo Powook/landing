@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./Container.css";
+import "./Container.scss";
 import cl from "classnames";
 
 export type ContainerProps = {

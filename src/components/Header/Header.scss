@@ -6,10 +6,12 @@
     margin-bottom: 10px;
   }
   p {
-    font-size: 10px;  
-    font-weight: 300;
-    line-height: 12px;
     color: #E4E5EA;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 
   @media all and (max-width: 750px) {
@@ -38,7 +40,6 @@
   padding-top:11px; 
   display: flex; 
   justify-content: space-between; 
-  align-items: center; 
   margin-top: 47px;
 
   @media all and (max-width: 750px) {
