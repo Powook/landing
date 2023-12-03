@@ -14,6 +14,7 @@ function App() {
         <Main/>
         <Footer/>
       </Container>
+      
       <BackgroundBalls/>
     </div>
   );
